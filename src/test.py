@@ -60,7 +60,7 @@ validation_generator = test_datagen.flow_from_directory(
 classifier.fit_generator(
         train_generator,
         steps_per_epoch=2000 // batch_size,
-        epochs=3,
+        epochs=70,
         validation_data=validation_generator,
         validation_steps=800 // batch_size)
 classifier.save('first_try.h5')
